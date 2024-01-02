@@ -10,7 +10,7 @@ services:
       - ./eprints_config:/opt/eprints3/cfg
       - ./eprints_data:/opt/eprints3/archives
   db:
-    image: mysql
+    image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: Alh4mdul1ll4hrepository
       MYSQL_DATABASE: eprints_db
