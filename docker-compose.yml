@@ -1,7 +1,7 @@
 version: '3'
 services:
   eprints:
-    image: eprints/eprints:3.4.4
+    image: jananta/eprints:3.4
     ports:
       - "80:80"
     depends_on:
@@ -10,7 +10,7 @@ services:
       - ./eprints_config:/opt/eprints3/cfg
       - ./eprints_data:/opt/eprints3/archives
   db:
-    image: mysql:5.7
+    image: mysql:5.7.44
     environment:
       MYSQL_ROOT_PASSWORD: Alh4mdul1ll4hrepository
       MYSQL_DATABASE: eprints_db
